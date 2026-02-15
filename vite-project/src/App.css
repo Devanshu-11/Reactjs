@@ -1,42 +1,63 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+.header{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid black;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.logo{
+    width: 120px;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.nav-items{
+    padding: 0px 30px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.nav-items>ul{
+    display: flex;
+    position: relative;
+    top: 20px;
+    list-style: none;
 }
 
-.card {
-  padding: 2em;
+.nav-items>ul>li{
+    padding: 10px;
+    margin: 10px;
+    font-size: 21px;
 }
 
-.read-the-docs {
-  color: #888;
+.res-container{
+    display: flex;
+    flex-wrap: wrap;
 }
+
+.res-card{
+    width: 243px;
+    height: 350px;
+    background-color: #f0f0f0;
+    padding: 3px;
+    margin: 8px;
+}
+
+.res-card:hover{
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.search{
+    padding: 10px;
+}
+
+.res-logo{
+    width: 228px;
+    height: 150px;
+    margin: 5px;
+    object-fit: cover;
+}
+
+.res-card h3,.res-card h4 {
+    margin: 12px 2px;
+    overflow-wrap: break-word;
+    word-break: break-word;
+}
+
+/* 1:45:15 */
