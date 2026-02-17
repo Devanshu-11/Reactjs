@@ -60,4 +60,14 @@
     word-break: break-word;
 }
 
-/* 1:45:15 */
+.filter-btn{
+    margin: 10px;
+    padding: 7px;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.filter-btn:hover{
+    color: white;
+    background-color: black;
+}
