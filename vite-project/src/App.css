@@ -32,7 +32,6 @@
 
 .res-card{
     width: 243px;
-    height: 350px;
     background-color: #f0f0f0;
     padding: 3px;
     margin: 8px;
@@ -70,4 +69,39 @@
 .filter-btn:hover{
     color: white;
     background-color: black;
+}
+
+.shimmer-card{
+    width: 243px;
+    height: 370px;
+    background-color: #f0f0f0;
+    padding: 3px;
+    margin: 8px;
+}
+
+.shimmer-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.login{
+    padding: 11px;
+    cursor: pointer;
+    font-size: 17px;
+}
+
+.filter{
+    display: flex;
+}
+
+.search-box{
+    margin: 10px;
+    padding: 7px;
+    font-size: 14px;
+}
+
+.search-btn{
+    padding: 7px;
+    cursor: pointer;
+    font-size: 13px;
 }
