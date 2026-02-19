@@ -15,6 +15,8 @@ function Body(){
     // fetch the data
     const fetchData= async()=>{
         const data = await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=19.0759837&lng=72.8776559&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING");
+        console.log(data);
+
         const json=await data.json();
         setListOfRestaurants(json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
         setFilteredRestaurants(json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
@@ -32,6 +34,9 @@ function Body(){
         const filteredList=listOfRestaurants.filter((res)=>res?.info?.avgRating>4);
 
         // so here, whenever a states variable updates, react re-renders the functional component
+        // setListOfRestaurants(filteredList);
+
+        // update the filtered code
         setFilteredRestaurants(filteredList);
     }
 
@@ -102,3 +107,8 @@ export default Body;
 // 3- As soon as we get the data, it renders it 
 // 4- it prevents the user to not see the blank screen, untill the data gets load
 // Also we do not have any problem to do rendering twice, because react renders very fast
+
+// React Router DOM updates the URL and renders the corresponding component without reloading the page and due to this, it is called Single Page Application
+// 2 types of routing in web apps-
+// 1- client side routing
+// 2- server side routing
