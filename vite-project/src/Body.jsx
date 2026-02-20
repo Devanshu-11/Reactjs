@@ -1,8 +1,10 @@
 import { useState,useEffect } from 'react';
 import resFood from '../ResFood.avif';
 import resObj from '../raw_data/mockData.json';
+import resData from '../raw_data/resMock.json';
 import RestaurantCard from './RestaurantCard.jsx';
 import Shimmer from './Shimmer.jsx';
+import { Link } from 'react-router-dom';
 
 function Body(){
     // Use State Hooks-
@@ -14,12 +16,14 @@ function Body(){
 
     // fetch the data
     const fetchData= async()=>{
-        const data = await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=19.0759837&lng=72.8776559&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING");
-        console.log(data);
+        // const data = await fetch("https://corsproxy.io/?https://www.swiggy.com/dapi/restaurants/list/v5?lat=19.0759837&lng=72.8776559&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING");
+        // const json=await data.json();
 
-        const json=await data.json();
+        // just get the mock data for the restaurants instead of using the direct api, because most of the time, api gets changes regularly
+        const json=resData;
         setListOfRestaurants(json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
         setFilteredRestaurants(json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
+        // console.log(json);
     }
 
     // useEffect Hooks-It helps us to perform side effects in the functional component
@@ -84,7 +88,11 @@ function Body(){
                 {/* here we have use key because if key is not there and we have to insert the cards, then it will re-renders all the cards because it will not know where to insert it but if we give them unique id, then it not renders all the restaurant cards instead renders only that restaurant card we have to insert */}
                 {/* {resObj.map((restaurant)=> (<RestaurantCard key={restaurant.id} resData={restaurant}/>))} */}
 
-                {filteredRestaurants.map((restaurant)=> (<RestaurantCard key={restaurant?.info?.id} resData={restaurant}/>))};
+                {filteredRestaurants.map((restaurant)=> (
+                    <Link key={restaurant?.info?.id} to={'/restaurants/'+restaurant?.info?.id}>
+                        <RestaurantCard resData={restaurant}/>
+                    </Link>
+                ))};
 
             </div>
         </div>

@@ -31,7 +31,8 @@
 }
 
 .res-card{
-    width: 243px;
+    height: 380px;
+    width: 305px;
     background-color: #f0f0f0;
     padding: 3px;
     margin: 8px;
@@ -47,7 +48,7 @@
 }
 
 .res-logo{
-    width: 228px;
+    width: 291px;
     height: 150px;
     margin: 5px;
     object-fit: cover;
