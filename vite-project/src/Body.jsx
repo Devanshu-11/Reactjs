@@ -4,6 +4,7 @@ import resObj from '../raw_data/mockData.json';
 import resData from '../raw_data/resMock.json';
 import RestaurantCard from './RestaurantCard.jsx';
 import Shimmer from './Shimmer.jsx';
+import useOnlineStatus from './utils/useOnlineStatus.jsx';
 import { Link } from 'react-router-dom';
 
 function Body(){
@@ -50,6 +51,12 @@ function Body(){
         setFilteredRestaurants(filteredRestaurant);
         // setListOfRestaurants(filteredRestaurant);
     };
+
+    // custom hooks
+    const onlineStatus=useOnlineStatus();
+    if(onlineStatus===false){
+        return(<h1>Looks Like you are offline!! Please check your internet connection</h1>)
+    }
 
     // Conditional Rendering
     // if(listOfRestaurants.length===0){

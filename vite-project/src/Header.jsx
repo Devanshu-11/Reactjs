@@ -1,14 +1,15 @@
 import { Link } from 'react-router-dom';
 import logoImage from '../restaurantLogo.png';
+import useOnlineStatus from './utils/useOnlineStatus.jsx';
 import { useState,useEffect } from 'react';
 
 function Header(){
 
     // when we changes the state variable using set variable,react re-render component and all updated value will be stored in state variable
     const [btnNameReact,setBtnNameReact]=useState("Login");
+    const onlineStatus=useOnlineStatus();
 
     // useEffect hooks
-
     // if does not have dependency array, it will render every time, my component gets render
     // useEffect(()=>{
     //     console.log("useEffect is called");
@@ -29,6 +30,7 @@ function Header(){
             <img className='logo' src={logoImage} />
             <div className='nav-items'>
                 <ul>
+                    <li>Status: {onlineStatus? "online": "offline"}</li>
                     <li>
                         <Link to='/'>Home</Link>
                     </li>
@@ -37,6 +39,9 @@ function Header(){
                     </li>
                     <li>
                         <Link to='/contact'>Contact Us</Link>
+                    </li>
+                    <li>
+                        <Link to='/grocery'>Grocery</Link>
                     </li>
                     <li>Cart</li>
                     <button className='login' onClick={()=>{btnNameReact==='Login'?setBtnNameReact('Logout'): setBtnNameReact('Login')}}>{btnNameReact}</button>

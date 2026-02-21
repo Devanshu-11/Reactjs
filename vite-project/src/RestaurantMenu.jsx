@@ -1,27 +1,15 @@
 import { useState,useEffect } from "react";
 import Shimmer from "./Shimmer.jsx";
 import mockResMenu from '../raw_data/mockResMenu.json';
+import useRestaurantMenu from "./utils/useRestaurantMenu.jsx";
 import { useParams } from 'react-router-dom';
 
 const RestaurantMenu=()=>{
-    const [resInfo,setResInfo]=useState(null);
+    // const [resInfo,setResInfo]=useState(null);
     const {resId}=useParams();
 
-    // To fetch the menu cards
-    const fetchMenu=async()=>{
-        // const data=await fetch('https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=19.0759837&lng=72.8776559&restaurantId='+resId);
-        // const json=await data.json();
-
-        // just get the mock menu data for the restaurants instead of using the direct api, because most of the time, api gets changes regularly
-        const json=mockResMenu;
-        setResInfo(json);
-        // console.log(json);
-    }
-
-    // useEffect Menu
-    useEffect(()=>{
-        fetchMenu();
-    },[]);
+    // custom hooks
+    const resInfo=useRestaurantMenu(resId);
 
     if(!resInfo){
         return <Shimmer />;
