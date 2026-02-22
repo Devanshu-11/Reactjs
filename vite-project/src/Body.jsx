@@ -55,7 +55,7 @@ function Body(){
     // custom hooks
     const onlineStatus=useOnlineStatus();
     if(onlineStatus===false){
-        return(<h1>Looks Like you are offline!! Please check your internet connection</h1>)
+        return(<h1 >Looks Like you are offline!! Please check your internet connection</h1>)
     }
 
     // Conditional Rendering
@@ -66,15 +66,16 @@ function Body(){
     return listOfRestaurants.length===0?(<Shimmer />):(
         <div className="Body">
             <div className='filter'>
-                <div className='search'>
-                    <input type='text' className='search-box' value={searchText} placeholder='Enter the name' onChange={(e)=>{
+                <div className='search flex flex-col md:flex-row items-center gap-4 m-4 p-4 bg-white rounded-lg shadow-md'>
+
+                    <input type='text' className="flex-1 px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-pink-400 transition-all placeholder-gray-400" value={searchText} placeholder='Enter the name' onChange={(e)=>{
                         setSearchText(e.target.value);
                     }}/>
 
-                    <button className='search-btn' onClick={searchRestaurants}>Search</button>
+                    <button className='bg-green-500 text-white px-6 py-2 rounded-lg hover:bg-green-600 transition-colors shadow-md' onClick={searchRestaurants}>Search</button>
                 </div>
 
-                <button className='filter-btn' onClick={TopRatedRestaurants}>Top Rated Restaurants</button>
+                <button className='bg-pink-500 text-white px-6 py-2 rounded-lg shadow-md hover:bg-pink-600 transition-colors hover:scale-105 transform font-semibold' onClick={TopRatedRestaurants}>Top Rated Restaurants</button>
             </div>
 
             <div className="res-container">

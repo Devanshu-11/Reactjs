@@ -26,25 +26,34 @@ function Header(){
     // },[]);
 
     return(
-        <div className="header">
-            <img className='logo' src={logoImage} />
+        <div className="flex justify-between items-center bg-pink-100 shadow-md px-6 py-3 h-28">
+            <div className='logo-container'>
+                <img className='w-20 rounded-lg' src={logoImage} />
+            </div>
+
             <div className='nav-items'>
-                <ul>
-                    <li>Status: {onlineStatus? "online": "offline"}</li>
-                    <li>
+                <ul className='flex items-center gap-6 font-medium text-gray-700 m-0 p-0'>
+                    <li className={`${onlineStatus ? "text-green-600" : "text-red-600"} font-semibold`}>Status: {onlineStatus? "online": "offline"}</li>
+
+                    <li className='hover:text-pink-600 cursor-pointer'>
                         <Link to='/'>Home</Link>
                     </li>
-                    <li>
+
+                    <li className='hover:text-pink-600 cursor-pointer'>
                         <Link to='/about'>About Us</Link>
                     </li>
-                    <li>
+
+                    <li className='hover:text-pink-600 cursor-pointer'>
                         <Link to='/contact'>Contact Us</Link>
                     </li>
-                    <li>
+
+                    <li className='hover:text-pink-600 cursor-pointer'>
                         <Link to='/grocery'>Grocery</Link>
                     </li>
-                    <li>Cart</li>
-                    <button className='login' onClick={()=>{btnNameReact==='Login'?setBtnNameReact('Logout'): setBtnNameReact('Login')}}>{btnNameReact}</button>
+
+                    <li className='hover:text-pink-600 cursor-pointer'>Cart</li>
+
+                    <button className='text-gray-700 hover:text-pink-600 cursor-pointer text-base px-1 py-0.5' onClick={()=>{btnNameReact==='Login'?setBtnNameReact('Logout'): setBtnNameReact('Login')}}>{btnNameReact}</button>
                 </ul>
             </div>
 

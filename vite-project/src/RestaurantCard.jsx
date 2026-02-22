@@ -8,7 +8,7 @@ const RestaurantCard=(props)=>{
     const {resData}=props;
 
     return(
-        <div className="res-card">
+        <div className="res-card bg-white rounded-xl shadow-lg hover:shadow-2xl transition-shadow transform hover:scale-105 p-4 flex flex-col items-center text-center min-h-110">
             {/* <img className='res-logo' src={resFood} /> */}
 
             {/* Previous Version of Passing props */}
@@ -20,12 +20,12 @@ const RestaurantCard=(props)=>{
             <h4>{resData.sla.deliveryTime} minutes</h4> */}
 
             {/* Passing through the api */}
-            <img className='res-logo' src={CDN_URL+resData?.info?.cloudinaryImageId} />
-            <h3>{resData?.info?.name}</h3>
-            <h4>{resData?.info?.cuisines.join(", ")}</h4>
-            <h4>{resData?.info?.avgRating} stars</h4>
-            <h4>{resData?.info?.costForTwo}</h4>
-            <h4>{resData?.info?.sla?.deliveryTime} minutes</h4>
+            <img className='res-logo w-32 h-32 object-cover rounded-lg mb-4' src={CDN_URL+resData?.info?.cloudinaryImageId} />
+            <h3 className="text-lg font-semibold mb-1 text-gray-800">{resData?.info?.name}</h3>
+            <h4 className="text-sm text-gray-500 mb-2">{resData?.info?.cuisines.join(", ")}</h4>
+            <h4 className="text-sm text-yellow-500 font-medium mb-1">{resData?.info?.avgRating} stars</h4>
+            <h4 className="text-sm text-gray-600 mb-1">{resData?.info?.costForTwo}</h4>
+            <h4 className="text-sm text-gray-600">{resData?.info?.sla?.deliveryTime} minutes</h4>
         </div>
     )
 }
