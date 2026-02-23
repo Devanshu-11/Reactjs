@@ -2,7 +2,7 @@ import { useState,useEffect } from 'react';
 import resFood from '../ResFood.avif';
 import resObj from '../raw_data/mockData.json';
 import resData from '../raw_data/resMock.json';
-import RestaurantCard from './RestaurantCard.jsx';
+import RestaurantCard,{ withPromotedLabel } from './RestaurantCard.jsx';
 import Shimmer from './Shimmer.jsx';
 import useOnlineStatus from './utils/useOnlineStatus.jsx';
 import { Link } from 'react-router-dom';
@@ -14,6 +14,7 @@ function Body(){
     const [listOfRestaurants,setListOfRestaurants]=useState([]);
     const [filteredRestaurants,setFilteredRestaurants]=useState([]);
     const [searchText, setSearchText]=useState("");
+    const RestaurantCardPromoted=withPromotedLabel(RestaurantCard);
 
     // fetch the data
     const fetchData= async()=>{
@@ -98,7 +99,8 @@ function Body(){
 
                 {filteredRestaurants.map((restaurant)=> (
                     <Link key={restaurant?.info?.id} to={'/restaurants/'+restaurant?.info?.id}>
-                        <RestaurantCard resData={restaurant}/>
+                        {/* if the restaurant is promoted, then add a promoted label to it */}
+                        {restaurant?.info?.Promoted? (<RestaurantCardPromoted resData={restaurant} />):(<RestaurantCard resData={restaurant}/>)}
                     </Link>
                 ))};
 

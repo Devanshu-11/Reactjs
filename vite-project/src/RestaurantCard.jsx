@@ -8,7 +8,7 @@ const RestaurantCard=(props)=>{
     const {resData}=props;
 
     return(
-        <div className="res-card bg-white rounded-xl shadow-lg hover:shadow-2xl transition-shadow transform hover:scale-105 p-4 flex flex-col items-center text-center min-h-110">
+        <div className="res-card bg-white rounded-xl shadow-lg hover:shadow-2xl transition-shadow min-h-110">
             {/* <img className='res-logo' src={resFood} /> */}
 
             {/* Previous Version of Passing props */}
@@ -28,6 +28,19 @@ const RestaurantCard=(props)=>{
             <h4 className="text-sm text-gray-600">{resData?.info?.sla?.deliveryTime} minutes</h4>
         </div>
     )
+}
+
+// Higher order component
+// input- Restaurant Card and output will be promoted restaurant card and basically taken the restaurant card as a input and returning a new component and a component is a function which returns some jsx
+export const withPromotedLabel=(RestaurantCard)=>{
+    return (props)=>{
+        return(
+            <div>
+                <label className="absolute bg-black text-white m-2 p-2 rounded-md">Promoted</label>
+                <RestaurantCard {...props}/>
+            </div>
+        )
+    }
 }
 
 export default RestaurantCard;
