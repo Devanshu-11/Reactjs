@@ -1,0 +1,106 @@
+[
+    {
+        "data":[
+            {
+                "ques": "What is the capital of France?",
+                "option": ["Paris", "London", "Berlin", "Madrid"]
+            },
+            {
+                "ques": "Which planet is known as the Red Planet?",
+                "option": ["Earth", "Mars", "Jupiter", "Saturn"]
+            },
+
+            {
+                "ques": "Who wrote the play 'Romeo and Juliet'?",
+                "option": ["William Wordsworth", "Charles Dickens", "William Shakespeare", "Jane Austen"]
+            },
+
+            {
+                "ques": "What is the largest ocean on Earth?",
+                "option": ["Indian Ocean", "Pacific Ocean", "Atlantic Ocean", "Arctic Ocean"]
+            },
+
+            {
+                "ques": "Which element has the chemical symbol 'O'?",
+                "option": ["Gold", "Oxygen", "Silver", "Hydrogen"]
+            },
+
+            {
+                "ques": "Which country is home to the Great Wall?",
+                "option": ["India", "China", "Japan", "Korea"]
+            },
+
+            {
+                "ques": "What is the square root of 64?",
+                "option": ["6", "7", "8", "9"]
+            },
+
+            {
+                "ques": "Who painted the Mona Lisa?",
+                "option": ["Vincent van Gogh", "Pablo Picasso", "Leonardo da Vinci", "Michelangelo"]
+            },
+
+            {
+                "ques": "Which gas do plants absorb from the atmosphere?",
+                "option": ["Oxygen", "Nitrogen", "Carbon Dioxide", "Hydrogen"]
+            },
+
+            {
+                "ques": "Which is the largest continent by area?",
+                "option": ["Africa", "Europe", "Asia", "Antarctica"]
+            }
+        ]
+    },
+    {
+        "data":[
+            {
+                "ques": "What is the capital of France?",
+                "option": ["Paris", "London", "Berlin", "Madrid"]
+            },
+            {
+                "ques": "Which planet is known as the Red Planet?",
+                "option": ["Earth", "Mars", "Jupiter", "Saturn"]
+            },
+
+            {
+                "ques": "Who wrote the play 'Romeo and Juliet'?",
+                "option": ["William Wordsworth", "Charles Dickens", "William Shakespeare", "Jane Austen"]
+            },
+
+            {
+                "ques": "What is the largest ocean on Earth?",
+                "option": ["Indian Ocean", "Pacific Ocean", "Atlantic Ocean", "Arctic Ocean"]
+            },
+
+            {
+                "ques": "Which element has the chemical symbol 'O'?",
+                "option": ["Gold", "Oxygen", "Silver", "Hydrogen"]
+            },
+
+            {
+                "ques": "Which country is home to the Great Wall?",
+                "option": ["India", "China", "Japan", "Korea"]
+            },
+
+            {
+                "ques": "What is the square root of 64?",
+                "option": ["6", "7", "8", "9"]
+            },
+
+            {
+                "ques": "Who painted the Mona Lisa?",
+                "option": ["Vincent van Gogh", "Pablo Picasso", "Leonardo da Vinci", "Michelangelo"]
+            },
+
+            {
+                "ques": "Which gas do plants absorb from the atmosphere?",
+                "option": ["Oxygen", "Nitrogen", "Carbon Dioxide", "Hydrogen"]
+            },
+
+            {
+                "ques": "Which is the largest continent by area?",
+                "option": ["Africa", "Europe", "Asia", "Antarctica"]
+            }
+        ]
+    }
+]

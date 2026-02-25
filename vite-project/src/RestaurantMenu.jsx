@@ -6,6 +6,8 @@ import { useParams } from 'react-router-dom';
 import RestaurantCategory from "./RestaurantCategory.jsx";
 
 const RestaurantMenu=()=>{
+    // by default, only first index is 0
+    const [showIndex, setShowIndex]=useState(null);
     // const [resInfo,setResInfo]=useState(null);
     const {resId}=useParams();
 
@@ -38,8 +40,9 @@ const RestaurantMenu=()=>{
                 {/* {itemCards.map((item,index)=><li key={item?.card?.info?.id}>{item?.card?.info?.name}: Rs.{item?.card?.info?.price/100||item?.card?.info?.defaultPrice/100}</li>)} */}
             {/* </ul> */}
 
-            {/* categories accordions */}
-            {categories.map((category)=>(<RestaurantCategory key={category?.card?.card?.title} data={category?.card?.card}/>))}
+            {/* categories accordions and also a controlled component */}
+            {/* Also indirectly calling useState from child to parent component using the function */}
+            {categories.map((category,index)=>(<RestaurantCategory key={category?.card?.card?.title} data={category?.card?.card} showItems={index===showIndex?true:false} setShowIndex={()=>setShowIndex(index) }/>))}
 
         </div>
     )
