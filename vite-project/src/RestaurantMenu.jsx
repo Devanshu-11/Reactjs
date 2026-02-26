@@ -1,8 +1,8 @@
 import { useState,useEffect } from "react";
+import { useParams } from 'react-router-dom';
 import Shimmer from "./Shimmer.jsx";
 import mockResMenu from '../raw_data/mockResMenu.json';
 import useRestaurantMenu from "./utils/useRestaurantMenu.jsx";
-import { useParams } from 'react-router-dom';
 import RestaurantCategory from "./RestaurantCategory.jsx";
 
 const RestaurantMenu=()=>{
@@ -10,6 +10,7 @@ const RestaurantMenu=()=>{
     const [showIndex, setShowIndex]=useState(null);
     // const [resInfo,setResInfo]=useState(null);
     const {resId}=useParams();
+    const dummy="Dummy Data";
 
     // custom hooks
     const resInfo=useRestaurantMenu(resId);
@@ -42,10 +43,12 @@ const RestaurantMenu=()=>{
 
             {/* categories accordions and also a controlled component */}
             {/* Also indirectly calling useState from child to parent component using the function */}
-            {categories.map((category,index)=>(<RestaurantCategory key={category?.card?.card?.title} data={category?.card?.card} showItems={index===showIndex?true:false} setShowIndex={()=>setShowIndex(index) }/>))}
+            {categories.map((category,index)=>(<RestaurantCategory key={category?.card?.card?.title} data={category?.card?.card} showItems={index===showIndex?true:false} setShowIndex={()=>setShowIndex(index) } dummy={dummy}/>))}
 
         </div>
     )
 }
 
 export default RestaurantMenu;
+
+// Props Drilling-It means that passing the data through several components just to get it to the one that actually needs it, means we are passing data from parent to deeply nested child component

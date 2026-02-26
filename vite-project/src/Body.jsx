@@ -1,11 +1,12 @@
-import { useState,useEffect } from 'react';
+import { useState,useEffect, useContext } from 'react';
+import { Link } from 'react-router-dom';
 import resFood from '../ResFood.avif';
 import resObj from '../raw_data/mockData.json';
 import resData from '../raw_data/resMock.json';
 import RestaurantCard,{ withPromotedLabel } from './RestaurantCard.jsx';
 import Shimmer from './Shimmer.jsx';
 import useOnlineStatus from './utils/useOnlineStatus.jsx';
-import { Link } from 'react-router-dom';
+import UserContext from './utils/UserContext.jsx';
 
 function Body(){
     // Use State Hooks-
@@ -15,6 +16,9 @@ function Body(){
     const [filteredRestaurants,setFilteredRestaurants]=useState([]);
     const [searchText, setSearchText]=useState("");
     const RestaurantCardPromoted=withPromotedLabel(RestaurantCard);
+
+    // import context api
+    const {loggedInUser,setUserName}=useContext(UserContext);
 
     // fetch the data
     const fetchData= async()=>{
@@ -66,7 +70,7 @@ function Body(){
 
     return listOfRestaurants.length===0?(<Shimmer />):(
         <div className="Body">
-            <div className='filter'>
+            <div className='filter gap-4 p-4'>
                 <div className='search flex flex-col md:flex-row items-center gap-4 m-4 p-4 bg-white rounded-lg shadow-md'>
 
                     <input type='text' className="flex-1 px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-pink-400 transition-all placeholder-gray-400" value={searchText} placeholder='Enter the name' onChange={(e)=>{
@@ -77,6 +81,20 @@ function Body(){
                 </div>
 
                 <button className='bg-pink-500 text-white px-6 py-2 rounded-lg shadow-md hover:bg-pink-600 transition-colors hover:scale-105 transform font-semibold' onClick={TopRatedRestaurants}>Top Rated Restaurants</button>
+
+                <div className="flex items-center gap-3 bg-white px-4 py-3 rounded-lg shadow-md border border-gray-200">
+                    <label className="text-gray-700 font-medium">
+                        UserName:
+                    </label>
+                    <input
+                        type="text"
+                        placeholder="Enter username"
+                        className="w-64 px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-pink-400 focus:border-pink-400 transition-all"
+                        value={loggedInUser}
+                        onChange={(e)=>setUserName(e.target.value)}
+                    />
+                </div>
+                
             </div>
 
             <div className="res-container">

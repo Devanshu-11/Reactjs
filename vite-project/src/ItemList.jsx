@@ -1,6 +1,8 @@
 import {CDN_URL} from './utils/constants.jsx';
 
-const ItemList=({items})=>{
+const ItemList=({items, dummy})=>{
+    console.log(dummy);
+
     return(
         <div className='bg-white rounded-xl shadow-md'>
             {items.map(item=> (

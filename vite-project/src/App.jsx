@@ -1,3 +1,6 @@
+import { createBrowserRouter,Outlet } from 'react-router-dom';
+import { lazy,Suspense, useEffect, useState } from 'react';
+import { useContext } from 'react';
 import './App.css';
 import Header from './Header.jsx';
 import Body from './Body.jsx';
@@ -6,17 +9,34 @@ import Contact from './Contact.jsx';
 import Error from './Error.jsx';
 import RestaurantMenu from './RestaurantMenu.jsx';
 // import Grocery from './Grocery.jsx';
-import { createBrowserRouter,Outlet } from 'react-router-dom';
-import { lazy,Suspense } from 'react';
 import Shimmer from './Shimmer.jsx';
+import UserContext from './utils/UserContext.jsx';
 
 function App(){
+    const [userName, setUserName]=useState();
+
+    // useEffect hook
+    useEffect(()=>{
+        const data={
+            name: "Namaste React",
+        }
+
+        setUserName(data.name);
+    },[]);
+
     return(
-        <div className="app">
-            <Header />
-            <Outlet />
-            {/* <Body /> */}
-        </div>
+        <UserContext.Provider value={{loggedInUser: userName, setUserName}}>
+            <div className="app">
+
+                {/* We can also do that here */}
+                {/* <UserContext.Provider value={{loggedInUser: "Elon Musk", setUserName}}> */}
+                    <Header />
+                {/* </UserContext.Provider> */}
+                <Outlet />
+
+                {/* <Body /> */}
+            </div>
+        </UserContext.Provider>
     )
 }
 
