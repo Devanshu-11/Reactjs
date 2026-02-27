@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import './css/ArenaSelector.css';
 
 const ArenaSelector=(props)=>{
@@ -7,7 +8,9 @@ const ArenaSelector=(props)=>{
                 <div className="arena-card">
                     <h2 className="arena-name">Arena- {props.number}</h2>
 
-                    <button className="enter-btn">Enter the Arena</button>
+                    <Link to={`/arena/${props.number}`}>
+                        <button className="enter-btn">Enter the Arena</button>
+                    </Link>
                 </div>
             </div>  
         </div>

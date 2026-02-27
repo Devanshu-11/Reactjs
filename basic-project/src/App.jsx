@@ -1,15 +1,16 @@
+import { Routes, Route } from 'react-router-dom';
 import './App.css';
-import mockData from './utils/mockQuestion.json';
-import ArenaSelector from './ArenaSelector';
+import ArenaList from './ArenaList.jsx';
+import QuestionSet from './QuestionSet.jsx';
 
 const App=()=>{
     return(
         <div>
-            <h1 className="arena-title">Arena Selection</h1>
-            
-            {mockData.map((arena,index)=>(
-            <ArenaSelector key={index} number={index+1}/>
-        ))}
+            {/* Routes for navigating */}
+            <Routes>
+                <Route path='/' element={<ArenaList />}></Route>
+                <Route path='/arena/:arenaNumber' element={<QuestionSet />} />
+            </Routes>
         </div>
     )
 }
