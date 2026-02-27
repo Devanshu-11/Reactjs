@@ -1,218 +1,218 @@
 [
-    {
-        "data": [
-            {
-                "ques": "What is the capital of France?",
-                "option": ["Paris", "London", "Berlin", "Madrid"],
-                "solution": 0
-            },
-            {
-                "ques": "Which planet is known as the Red Planet?",
-                "option": ["Earth", "Mars", "Jupiter", "Saturn"],
-                "solution": 1
-            },
-            {
-                "ques": "Who wrote the play 'Romeo and Juliet'?",
-                "option": ["William Wordsworth", "Charles Dickens", "William Shakespeare", "Jane Austen"],
-                "solution": 2
-            },
-            {
-                "ques": "What is the largest ocean on Earth?",
-                "option": ["Indian Ocean", "Pacific Ocean", "Atlantic Ocean", "Arctic Ocean"],
-                "solution": 1
-            },
-            {
-                "ques": "Which element has the chemical symbol 'O'?",
-                "option": ["Gold", "Oxygen", "Silver", "Hydrogen"],
-                "solution": 1
-            },
-            {
-                "ques": "Which country is home to the Great Wall?",
-                "option": ["India", "China", "Japan", "Korea"],
-                "solution": 1
-            },
-            {
-                "ques": "What is the square root of 64?",
-                "option": ["6", "7", "8", "9"],
-                "solution": 2
-            },
-            {
-                "ques": "Who painted the Mona Lisa?",
-                "option": ["Vincent van Gogh", "Pablo Picasso", "Leonardo da Vinci", "Michelangelo"],
-                "solution": 2
-            },
-            {
-                "ques": "Which gas do plants absorb from the atmosphere?",
-                "option": ["Oxygen", "Nitrogen", "Carbon Dioxide", "Hydrogen"],
-                "solution": 2
-            },
-            {
-                "ques": "Which is the largest continent by area?",
-                "option": ["Africa", "Europe", "Asia", "Antarctica"],
-                "solution": 2
-            }
-        ]
-    },
-    {
-        "data": [
-            {
-                "ques": "What is the capital of France?",
-                "option": ["Paris", "London", "Berlin", "Madrid"],
-                "solution": 0
-            },
-            {
-                "ques": "Which planet is known as the Red Planet?",
-                "option": ["Earth", "Mars", "Jupiter", "Saturn"],
-                "solution": 1
-            },
-            {
-                "ques": "Who wrote the play 'Romeo and Juliet'?",
-                "option": ["William Wordsworth", "Charles Dickens", "William Shakespeare", "Jane Austen"],
-                "solution": 2
-            },
-            {
-                "ques": "What is the largest ocean on Earth?",
-                "option": ["Indian Ocean", "Pacific Ocean", "Atlantic Ocean", "Arctic Ocean"],
-                "solution": 1
-            },
-            {
-                "ques": "Which element has the chemical symbol 'O'?",
-                "option": ["Gold", "Oxygen", "Silver", "Hydrogen"],
-                "solution": 1
-            },
-            {
-                "ques": "Which country is home to the Great Wall?",
-                "option": ["India", "China", "Japan", "Korea"],
-                "solution": 1
-            },
-            {
-                "ques": "What is the square root of 64?",
-                "option": ["6", "7", "8", "9"],
-                "solution": 2
-            },
-            {
-                "ques": "Who painted the Mona Lisa?",
-                "option": ["Vincent van Gogh", "Pablo Picasso", "Leonardo da Vinci", "Michelangelo"],
-                "solution": 2
-            },
-            {
-                "ques": "Which gas do plants absorb from the atmosphere?",
-                "option": ["Oxygen", "Nitrogen", "Carbon Dioxide", "Hydrogen"],
-                "solution": 2
-            },
-            {
-                "ques": "Which is the largest continent by area?",
-                "option": ["Africa", "Europe", "Asia", "Antarctica"],
-                "solution": 2
-            }
-        ]
-    },
-    {
-        "data": [
-            {
-                "ques": "What is the capital of France?",
-                "option": ["Paris", "London", "Berlin", "Madrid"],
-                "solution": 0
-            },
-            {
-                "ques": "Which planet is known as the Red Planet?",
-                "option": ["Earth", "Mars", "Jupiter", "Saturn"],
-                "solution": 1
-            },
-            {
-                "ques": "Who wrote the play 'Romeo and Juliet'?",
-                "option": ["William Wordsworth", "Charles Dickens", "William Shakespeare", "Jane Austen"],
-                "solution": 2
-            },
-            {
-                "ques": "What is the largest ocean on Earth?",
-                "option": ["Indian Ocean", "Pacific Ocean", "Atlantic Ocean", "Arctic Ocean"],
-                "solution": 1
-            },
-            {
-                "ques": "Which element has the chemical symbol 'O'?",
-                "option": ["Gold", "Oxygen", "Silver", "Hydrogen"],
-                "solution": 1
-            },
-            {
-                "ques": "Which country is home to the Great Wall?",
-                "option": ["India", "China", "Japan", "Korea"],
-                "solution": 1
-            },
-            {
-                "ques": "What is the square root of 64?",
-                "option": ["6", "7", "8", "9"],
-                "solution": 2
-            },
-            {
-                "ques": "Who painted the Mona Lisa?",
-                "option": ["Vincent van Gogh", "Pablo Picasso", "Leonardo da Vinci", "Michelangelo"],
-                "solution": 2
-            },
-            {
-                "ques": "Which gas do plants absorb from the atmosphere?",
-                "option": ["Oxygen", "Nitrogen", "Carbon Dioxide", "Hydrogen"],
-                "solution": 2
-            },
-            {
-                "ques": "Which is the largest continent by area?",
-                "option": ["Africa", "Europe", "Asia", "Antarctica"],
-                "solution": 2
-            }
-        ]
-    },
-    {
-        "data": [
-            {
-                "ques": "What is the capital of France?",
-                "option": ["Paris", "London", "Berlin", "Madrid"],
-                "solution": 0
-            },
-            {
-                "ques": "Which planet is known as the Red Planet?",
-                "option": ["Earth", "Mars", "Jupiter", "Saturn"],
-                "solution": 1
-            },
-            {
-                "ques": "Who wrote the play 'Romeo and Juliet'?",
-                "option": ["William Wordsworth", "Charles Dickens", "William Shakespeare", "Jane Austen"],
-                "solution": 2
-            },
-            {
-                "ques": "What is the largest ocean on Earth?",
-                "option": ["Indian Ocean", "Pacific Ocean", "Atlantic Ocean", "Arctic Ocean"],
-                "solution": 1
-            },
-            {
-                "ques": "Which element has the chemical symbol 'O'?",
-                "option": ["Gold", "Oxygen", "Silver", "Hydrogen"],
-                "solution": 1
-            },
-            {
-                "ques": "Which country is home to the Great Wall?",
-                "option": ["India", "China", "Japan", "Korea"],
-                "solution": 1
-            },
-            {
-                "ques": "What is the square root of 64?",
-                "option": ["6", "7", "8", "9"],
-                "solution": 2
-            },
-            {
-                "ques": "Who painted the Mona Lisa?",
-                "option": ["Vincent van Gogh", "Pablo Picasso", "Leonardo da Vinci", "Michelangelo"],
-                "solution": 2
-            },
-            {
-                "ques": "Which gas do plants absorb from the atmosphere?",
-                "option": ["Oxygen", "Nitrogen", "Carbon Dioxide", "Hydrogen"],
-                "solution": 2
-            },
-            {
-                "ques": "Which is the largest continent by area?",
-                "option": ["Africa", "Europe", "Asia", "Antarctica"],
-                "solution": 2
-            }
-        ]
-    }
+  {
+    "data": [
+      {
+        "ques": "What is the smallest prime number?",
+        "option": ["0", "1", "2", "3"],
+        "solution": 2
+      },
+      {
+        "ques": "Which planet is closest to the Sun?",
+        "option": ["Venus", "Mercury", "Earth", "Mars"],
+        "solution": 1
+      },
+      {
+        "ques": "Who invented the telephone?",
+        "option": ["Alexander Graham Bell", "Thomas Edison", "Nikola Tesla", "Albert Einstein"],
+        "solution": 0
+      },
+      {
+        "ques": "What is the largest mammal in the world?",
+        "option": ["Elephant", "Blue Whale", "Giraffe", "Hippopotamus"],
+        "solution": 1
+      },
+      {
+        "ques": "Which gas is essential for breathing?",
+        "option": ["Carbon Dioxide", "Oxygen", "Nitrogen", "Hydrogen"],
+        "solution": 1
+      },
+      {
+        "ques": "What is the chemical symbol for water?",
+        "option": ["H2O", "CO2", "O2", "NaCl"],
+        "solution": 0
+      },
+      {
+        "ques": "Who discovered penicillin?",
+        "option": ["Marie Curie", "Alexander Fleming", "Louis Pasteur", "Gregor Mendel"],
+        "solution": 1
+      },
+      {
+        "ques": "Which country is famous for the Eiffel Tower?",
+        "option": ["Italy", "France", "Spain", "Germany"],
+        "solution": 1
+      },
+      {
+        "ques": "Which organ pumps blood through the body?",
+        "option": ["Lungs", "Heart", "Kidneys", "Liver"],
+        "solution": 1
+      },
+      {
+        "ques": "What is the largest desert in the world?",
+        "option": ["Sahara", "Gobi", "Kalahari", "Antarctic Desert"],
+        "solution": 3
+      }
+    ]
+  },
+  {
+    "data": [
+      {
+        "ques": "What is the boiling point of water at sea level?",
+        "option": ["90°C", "100°C", "110°C", "120°C"],
+        "solution": 1
+      },
+      {
+        "ques": "Which planet has the most moons?",
+        "option": ["Mars", "Jupiter", "Saturn", "Earth"],
+        "solution": 2
+      },
+      {
+        "ques": "Who painted the Starry Night?",
+        "option": ["Pablo Picasso", "Vincent van Gogh", "Claude Monet", "Leonardo da Vinci"],
+        "solution": 1
+      },
+      {
+        "ques": "Which is the fastest land animal?",
+        "option": ["Cheetah", "Lion", "Tiger", "Leopard"],
+        "solution": 0
+      },
+      {
+        "ques": "What is the main gas in the Earth's atmosphere?",
+        "option": ["Oxygen", "Nitrogen", "Carbon Dioxide", "Argon"],
+        "solution": 1
+      },
+      {
+        "ques": "Which instrument is used to measure temperature?",
+        "option": ["Barometer", "Thermometer", "Hygrometer", "Anemometer"],
+        "solution": 1
+      },
+      {
+        "ques": "Who wrote '1984'?",
+        "option": ["George Orwell", "Aldous Huxley", "Mark Twain", "J.K. Rowling"],
+        "solution": 0
+      },
+      {
+        "ques": "Which country is known as the Land of the Rising Sun?",
+        "option": ["China", "Japan", "Thailand", "India"],
+        "solution": 1
+      },
+      {
+        "ques": "What is the chemical symbol for gold?",
+        "option": ["Au", "Ag", "Gd", "Go"],
+        "solution": 0
+      },
+      {
+        "ques": "Which ocean is the largest?",
+        "option": ["Atlantic", "Pacific", "Indian", "Arctic"],
+        "solution": 1
+      }
+    ]
+  },
+  {
+    "data": [
+      {
+        "ques": "Who developed the theory of relativity?",
+        "option": ["Isaac Newton", "Albert Einstein", "Galileo Galilei", "Niels Bohr"],
+        "solution": 1
+      },
+      {
+        "ques": "Which country has the Great Barrier Reef?",
+        "option": ["Australia", "USA", "Brazil", "South Africa"],
+        "solution": 0
+      },
+      {
+        "ques": "What is the largest planet in our solar system?",
+        "option": ["Saturn", "Earth", "Jupiter", "Neptune"],
+        "solution": 2
+      },
+      {
+        "ques": "Which element has the chemical symbol 'Na'?",
+        "option": ["Nitrogen", "Sodium", "Neon", "Nickel"],
+        "solution": 1
+      },
+      {
+        "ques": "Which language is primarily spoken in Brazil?",
+        "option": ["Spanish", "Portuguese", "French", "English"],
+        "solution": 1
+      },
+      {
+        "ques": "Who is known as the Father of Computers?",
+        "option": ["Charles Babbage", "Alan Turing", "Bill Gates", "Steve Jobs"],
+        "solution": 0
+      },
+      {
+        "ques": "Which country is home to the Pyramids of Giza?",
+        "option": ["Egypt", "Mexico", "Peru", "India"],
+        "solution": 0
+      },
+      {
+        "ques": "What is the primary source of energy for the Earth?",
+        "option": ["Wind", "Water", "Sun", "Coal"],
+        "solution": 2
+      },
+      {
+        "ques": "Which planet is called the Morning Star?",
+        "option": ["Venus", "Mars", "Jupiter", "Mercury"],
+        "solution": 0
+      },
+      {
+        "ques": "Which metal is liquid at room temperature?",
+        "option": ["Mercury", "Lead", "Gold", "Silver"],
+        "solution": 0
+      }
+    ]
+  },
+  {
+    "data": [
+      {
+        "ques": "Which organ is responsible for producing insulin?",
+        "option": ["Liver", "Pancreas", "Kidney", "Heart"],
+        "solution": 1
+      },
+      {
+        "ques": "Who is the author of 'Harry Potter'?",
+        "option": ["J.R.R. Tolkien", "J.K. Rowling", "C.S. Lewis", "George R.R. Martin"],
+        "solution": 1
+      },
+      {
+        "ques": "Which planet is known as the Blue Planet?",
+        "option": ["Earth", "Neptune", "Uranus", "Saturn"],
+        "solution": 0
+      },
+      {
+        "ques": "Which element has the chemical symbol 'Fe'?",
+        "option": ["Fluorine", "Iron", "Francium", "Fermium"],
+        "solution": 1
+      },
+      {
+        "ques": "What is the freezing point of water?",
+        "option": ["0°C", "32°C", "-10°C", "100°C"],
+        "solution": 0
+      },
+      {
+        "ques": "Which desert is known as the Cold Desert?",
+        "option": ["Sahara", "Gobi", "Antarctic Desert", "Kalahari"],
+        "solution": 2
+      },
+      {
+        "ques": "Which scientist proposed the laws of motion?",
+        "option": ["Galileo Galilei", "Isaac Newton", "Albert Einstein", "Niels Bohr"],
+        "solution": 1
+      },
+      {
+        "ques": "Which country is known for maple syrup?",
+        "option": ["Canada", "USA", "Sweden", "Norway"],
+        "solution": 0
+      },
+      {
+        "ques": "What is the hardest natural substance on Earth?",
+        "option": ["Diamond", "Gold", "Iron", "Granite"],
+        "solution": 0
+      },
+      {
+        "ques": "Which planet has a ring system?",
+        "option": ["Mars", "Venus", "Saturn", "Mercury"],
+        "solution": 2
+      }
+    ]
+  }
 ]

@@ -1,0 +1,83 @@
+/* Error.css */
+
+/* General container styling */
+.error-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  background-color: #f4f4f9; /* Matches other pages */
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+/* 404 number styling */
+.error-container h1 {
+  font-size: 8rem;
+  color: #ff5722; /* Matches button color in ArenaSelector.css */
+  margin: 0;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Error message */
+.error-container p {
+  font-size: 1.5rem;
+  color: #333;
+  margin: 15px 0;
+}
+
+/* Home button styling */
+.error-container a {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 12px 25px;
+  background-color: #ff5722;
+  color: #fff;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+/* Hover effect for button */
+.error-container a:hover {
+  background-color: #e64a19;
+  transform: scale(1.05);
+}
+
+/* ----------------------------- */
+/* Responsive Design */
+/* ----------------------------- */
+@media (max-width: 1024px) {
+  .error-container h1 {
+    font-size: 6rem;
+  }
+
+  .error-container p {
+    font-size: 1.3rem;
+  }
+
+  .error-container a {
+    padding: 10px 20px;
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .error-container h1 {
+    font-size: 4.5rem;
+  }
+
+  .error-container p {
+    font-size: 1.2rem;
+  }
+
+  .error-container a {
+    width: 90%;
+    padding: 12px 0;
+    font-size: 1rem;
+  }
+}
