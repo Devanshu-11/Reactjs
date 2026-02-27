@@ -71,6 +71,12 @@ body {
   transform: scale(1.05);
 }
 
+.selected {
+  background-color: #ff5722;
+  color: white;
+  transform: scale(1.05);
+}
+
 /* ----------------------------- */
 /* Responsive Design */
 /* ----------------------------- */
