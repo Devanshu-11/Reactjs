@@ -1,9 +1,9 @@
-const Card=()=>{
+const Card=(props)=>{
     return(
         <div className="Card">
-            <span className="card-name">Name</span>
-            <button className="edit-btn">Edit</button>
-            <button className="delete-btn">Delete</button>
+            <span className="card-name">{props.number}</span>
+            <span className="card-name">{props.searchText}</span>
+            <button className="delete-btn" onClick={props.onDelete}>Delete</button>
         </div>
     )
 }
