@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { useState,useEffect, useContext } from 'react';
+import { useSelector } from 'react-redux';
 import logoImage from '../restaurantLogo.png';
 import useOnlineStatus from './utils/useOnlineStatus.jsx';
 import UserContext from './utils/UserContext.jsx';
@@ -12,6 +13,9 @@ function Header(){
 
     // getting the user context data
     const {loggedInUser}=useContext(UserContext);
+
+    // Selector-It is nothing but hook in react, subscribing to the store using selector
+    const cartItems=useSelector((store)=>store.cart.items);
 
     // useEffect hooks
     // if does not have dependency array, it will render every time, my component gets render
@@ -55,7 +59,9 @@ function Header(){
                         <Link to='/grocery'>Grocery</Link>
                     </li>
 
-                    <li className='hover:text-pink-600 cursor-pointer'>Cart</li>
+                    <li className='hover:text-pink-600 cursor-pointer'>
+                        <Link to='/cart'>Cart ({cartItems.length})</Link>
+                    </li>
 
                     <button className='text-gray-700 hover:text-pink-600 cursor-pointer text-base px-1 py-0.5' onClick={()=>{btnNameReact==='Login'?setBtnNameReact('Logout'): setBtnNameReact('Login')}}>{btnNameReact}</button>
 

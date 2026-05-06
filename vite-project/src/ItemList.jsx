@@ -1,7 +1,15 @@
-import {CDN_URL} from './utils/constants.jsx';
+import { useDispatch } from 'react-redux';
+import { CDN_URL } from './utils/constants.jsx';
+import { addItem } from './utils/cartSlice.jsx';
 
 const ItemList=({items, dummy})=>{
     console.log(dummy);
+    const dispatch=useDispatch();
+
+    const handleAddItem=(item)=>{
+        // dispatch an action
+        dispatch(addItem(item));
+    };
 
     return(
         <div className='bg-white rounded-xl shadow-md'>
@@ -9,7 +17,7 @@ const ItemList=({items, dummy})=>{
                 <div key={item?.card?.info?.id} className="p-5 m-4 border-b border-gray-100 flex items-start gap-4 ">
                     <div>
                         <img src={CDN_URL+ item?.card?.info?.imageId} className='w-24 h-24 object-cover rounded-lg shadow-sm'></img>
-                        <button className='mt-3 px-4 py-1.5 bg-green-500 text-white text-sm font-semibold rounded-lg shadow-sm hover:cursor-pointer'>Add +</button>
+                        <button className='mt-3 px-4 py-1.5 bg-green-500 text-white text-sm font-semibold rounded-lg shadow-sm hover:cursor-pointer' onClick={()=>handleAddItem(item)}>Add +</button>
                     </div>
 
                     <div className='flex flex-col'>
